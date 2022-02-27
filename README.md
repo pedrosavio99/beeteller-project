@@ -142,9 +142,13 @@ Dentro do index.js do Main desenvolver o função que integra o front com o back
 refreshandget()
 
 ### Teste unitarios com Jest
-criei o arquivo index espec para podermos testar funcinalidades basicas do backend como a resposta da ap e seu conteudo.
+criei o arquivo index espec para podermos testar funcinalidades basicas do backend como a resposta da api e seu conteudo.
 
+Para verificar os testes basta entrar na pasta do server em seu terminal e rodar o comando:
 
+```javascript
+npm teste
+```
 
 
 
