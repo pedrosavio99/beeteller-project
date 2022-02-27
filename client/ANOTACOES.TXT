@@ -1,0 +1,15 @@
+criar o app
+npx create-react-app client
+
+instalar o axios para podermos realizar requisiçoes http e e utilizarmso no node e no navegador
+
+        npm i axios react-router-dom
+
+crie os componentes e suas estilizações
+
+Signup - MUDAR O LINK DO BACKAND DE LOCAL PARA  ANUVEM DO INDEX.JSX
+Login - MUDAR O LINK DO BACKAND DE LOCAL PARA  ANUVEM
+Main - requisitar metodo get de { API de moedas BRL/USD - API de moedas BTC/EUR (primeiro parâmetro da chave a) -API de moedas BTC/USD (primeiro parâmetro da chave a)}
+navbar
+
+.
