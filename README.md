@@ -74,7 +74,7 @@ npm init --yes
 npm i express mongoose dotenv nodemon cors
 ```
 
-Criação dos Middleware dentro do arquivo index.js e a porta que usaremos no ambiente de desenvolvimento .
+Criação dos Middleware dentro do arquivo index.js e a porta que usaremos no ambiente de desenvolvimento(8080) .
 
 Criação do banco de dados MongoDb dentro do arquivo db.js
 
@@ -97,7 +97,7 @@ criptografar senhas em hash com o bcrypt.
 npm i bcrypt
 ```
 
-criação da pasta routes e suas rotas ambas são post
+criação da pasta routes e suas rotas ambas são post e estão dento do arquivo server.js
 
 rota de cadastro de novos usuários - users.js
 rota de login e autenticação do user - auth.js
@@ -140,6 +140,10 @@ Criar o componente item de lista para poder listar as cotações do dollar de ac
 Dentro do index.js do Main desenvolver o função que integra o front com o backend e guarda seus dados em promisses do React, essa função é renderizada ao carregar a pagina ou clicar no botão de "refresh"
 
 refreshandget()
+
+### Teste unitarios com Jest
+criei o arquivo index espec para podermos testar funcinalidades basicas do backend como a resposta da ap e seu conteudo.
+
 
 
 
