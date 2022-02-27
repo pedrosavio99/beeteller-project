@@ -21,7 +21,7 @@ const dollar_brl = async function(erro,res,body){
     baixa = json.USDBRL['low']
     dia =  json.USDBRL['create_date']
     infoCoin.push(cotacao,nome,alta,baixa,dia)
-    console.log(cotacao, dia, nome, alta)
+    //console.log(cotacao, dia, nome, alta)
 }
 
 request(options, dollar_brl)

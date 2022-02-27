@@ -15,7 +15,7 @@ const callback_btc_eur = async function(erro,res,body){
     let json = JSON.parse(body)
     cotacao = json.result.XXBTZEUR['a'][0]
     infoCoin.push(cotacao)
-    console.log(cotacao)
+    //console.log(cotacao)
 }
 
 request(options, callback_btc_eur)

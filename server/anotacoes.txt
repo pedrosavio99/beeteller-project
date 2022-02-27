@@ -1,0 +1,87 @@
+=============================== parte inicial do servidor ============================
+
+iniciar o servidor e guardar nossas dependencias node com 
+
+        npm init --yes
+
+criar o express e o moongose (melhorar essa descrição mt vaga) =================ATENCAO====================
+
+        npm i express mongoose dotenv nodemon cors
+
+adicionar start em package.json
+
+        "start": "nodemon index.js"
+
+criação do index.js 
+
+    nesse index criamos os middlewares que são os intemediarios entre backand e frontand
+    bem omo a porta que iremos utilizar no ambiente de desenvolvimento
+
+criaando o db.js   =================ATENCAO====================
+
+        banco utilizado : mongoDB
+
+crianção do arquivo de armazenamento de variaveis de ambiente .env
+
+
+teste de nosso servidor:
+
+        npm start
+
+
+=============================== Crianção do modelo a ser enviado ao banco de dados ============================
+
+usaremos JWT para autenticar os nosso usuários
+
+
+        npm i jsonwebtoken joi joi-password-complexity
+
+criar a pasta para armazenar nosso modelo user.js E criar nossas validações com JWT
+
+
+
+=============================== Registro de rotas ==========================================
+
+nao podemos mostrar a senhar do usuário precisamos  de uma forma de mascarar ela...
+criptografar senhas em hash com o bcrypt.
+
+        npm i bcrypt
+
+
+criação da pasta routes e suas rotas. ambas são post
+começando com a rota dos usuários - users.js
+termiNando com a rota de login + autenticação do user - auth.js
+
+falta a rota de requisição get das apis
+
+====================== AAAAAAATTTTTTTEEEEEEEEENNNNNNNNCCCCCCCAAAAAAAAAOOOOOOOOOOOOO =============
+               ( AS REQUISIÇÕES DAS APIS SERÃO DE METODOS GET DAS APIS DE COTAÕES )
+
+
+
+===========================IMPORTANDO AS ROTAS PARA REQUISIÇÃO ==============================================
+
+EM INDEX JS IMPORTAR SUAS NOVAS ROTAS:
+
+                const userRoutes = require("./routes/users");
+                const authRoutes = require("./routes/auth");
+
+determinar o endereço deles:
+
+                app.use("/api/users", userRoutes);
+                app.use("/api/auth", authRoutes);
+
+
+
+
+testes
+
+npm install jest
+
+npm intall supertest
+
+em scripts 
+
+"test": "jest"
+
+criar na raiz do server o arquivo para tetes : index.spec.js

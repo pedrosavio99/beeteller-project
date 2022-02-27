@@ -22,7 +22,7 @@ var infoCoin = []
 const callback_todas_cotacoes = async function(erro,res,body){
     let json = JSON.parse(body)
     infoCoin.push(json)
-    console.log(json)
+    //console.log(json)
 }
 
 
